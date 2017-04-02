@@ -115,15 +115,17 @@ nav li {
 }
 
 .meIntro {
-  display: block;
+  
   padding: 15px 5px 0 5px;
-  width: 300px;
+  width: 100%;
   color: #0b0b0c;
-  padding-bottom: 10px;
+  text-indent: 8px;
+  line-height: 140%;
 }
 
 .meIntro p:first-child {
   padding-bottom: 10px;
+  text-indent: 8PX;
   color: gray;
 }
 
