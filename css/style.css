@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 16px/1.33 "Alegreya Sans", sans-serif;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #ffffff;
+  padding: 0 20px;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+header {
+  background-color: #37475f;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.logo {
+  display: inline-block;
+  background: rgba(255, 255, 255, .5);
+  color: #37475f;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  font: bold 28px/1 Alegreya, serif;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  display: inline-block;
+}
+
+
+/*************** HOMEWORK BELOW Hover styles****/
+
+nav a:hover {
+  background: rgba(255, 255, 255, .5);
+  transform: scale(1.2);
+  color: #0e1012;
+  font-weight: 400;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding-top: 10px;
+}
+
+.hero {
+  background-color: #342e2e;
+  text-align: center;
+  padding: 80px 0;
+  background-image: url(../img/hero.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+
+
+
+.hero a {
+  color: rgba(255, 255, 255, .85);
+}
+
+.hero a:hover {
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 1.2;
+  animation-delay: .2s;
+}
+
+.hero pre {
+  padding-bottom: 5px;
+  font-size: 17px;
+  animation-delay: .8s;
+}
+
+.hero p {
+  animation-delay: 1.8s;
+}
+
+@media (min-width: 700px) {
+  .logo {
+    float: left;
+  }
+  nav {
+    float: right;
+  }
+  nav li {
+    padding: 0;
+    line-height: 24px;
+  }
+}
