@@ -14,7 +14,7 @@ a {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   color: #ffffff;
   padding: 0 20px;
@@ -100,13 +100,13 @@ nav li {
 
 .pic {
   padding-top: 10px;
-   width: 120px;
-   height: 120px;
-   border-radius: 50%;
-   margin: 0 auto  10px;
-   overflow: hidden;
-   border: 1px solid rgba(255, 255, 255, .8);
-   background: rgba(0,0,0, .5);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .8);
+  background: rgba(0, 0, 0, .5);
 }
 
 .pic img {
@@ -131,10 +131,22 @@ nav li {
     border-radius: 0;
     height: auto;
     position: absolute;
-    width:230px;
+    width: 230px;
     top: -20px;
     left: 20px;
-    border-bottom: 2px solid #b7b7b7;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+  }
+  /*Radial gradient to create shadow*/
+  .pic::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-top: 100%;
+    background: radial-gradient(rgba(0, 0, 0, .5) 0, rgba(0, 0, 0, 0) 70%);
+    transform: translateY(50%);
   }
   .pic img {
     display: block;
@@ -142,9 +154,41 @@ nav li {
   }
   .hero .container {
     position: relative;
-    padding-left: 200px; 
+    padding-left: 200px;
   }
   .hero h1 {
     font-size: 48px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .pic {
+    width: 350px;
+    top: -50px;
+  }
+  .hero {
+    padding: 120px 0;
+  }
+  .hero h1 {
+    font-size: 60px;
+  }
+  .hero .container {
+    padding-left: 300px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .pic {
+    width: 450px;
+    top: -80px;
+  }
+  .hero {
+    padding: 160px 0;
+  }
+  .hero h1 {
+    font-size: 72px;
+  }
+  .hero .container {
+    padding-left: 400px;
   }
 }
