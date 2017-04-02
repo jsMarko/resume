@@ -125,4 +125,26 @@ nav li {
     padding: 0;
     line-height: 24px;
   }
+  .pic {
+    background: none;
+    border: none;
+    border-radius: 0;
+    height: auto;
+    position: absolute;
+    width:230px;
+    top: -20px;
+    left: 20px;
+    border-bottom: 2px solid #b7b7b7;
+  }
+  .pic img {
+    display: block;
+    width: 100%;
+  }
+  .hero .container {
+    position: relative;
+    padding-left: 200px; 
+  }
+  .hero h1 {
+    font-size: 48px;
+  }
 }
