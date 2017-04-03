@@ -119,6 +119,8 @@ nav li {
   width: 100%;
   color: #0b0b0c;
   text-indent: 8px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .meIntro p:first-child {
@@ -128,6 +130,16 @@ nav li {
 }
 
 @media (min-width: 700px) {
+  .meIntro {
+    width: 65%;
+    float: right;
+  }
+  .hero pre {
+    font-size: 22px;
+  }
+  .hero p {
+    font-size: 19px;
+  }
   .logo {
     float: left;
   }
@@ -191,6 +203,10 @@ nav li {
 }
 
 @media (min-width: 1300px) {
+  .meIntro {
+    /****** arrrgh its not working*/
+    width: 60%;
+  }
   .pic {
     width: 450px;
     top: -80px;
