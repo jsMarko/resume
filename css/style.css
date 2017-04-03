@@ -130,10 +130,9 @@ nav li {
 }
 
 @media (min-width: 700px) {
-  .meIntro {
-    font-size: 18px;
-  }
+ 
   .meIntro p {
+    font-size: 18px;
     margin-left: 225px;
   }
   .hero pre {
@@ -190,6 +189,7 @@ nav li {
 
 @media (min-width: 1000px) {
   .meIntro p {
+    font-size: 22px;
     margin-left: 350px;
   }
   .pic {
@@ -208,10 +208,9 @@ nav li {
 }
 
 @media (min-width: 1300px) {
-  .meIntro {
-    font-size: 22px;
-  }
+ 
   .meIntro p {
+    font-size: 28px;
     margin-left: 475px;
   }
   .pic {
