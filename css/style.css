@@ -131,8 +131,10 @@ nav li {
 
 @media (min-width: 700px) {
   .meIntro {
-    width: 65%;
-    float: right;
+    font-size: 18px;
+  }
+  .meIntro p {
+    margin-left: 225px;
   }
   .hero pre {
     font-size: 22px;
@@ -187,6 +189,9 @@ nav li {
 }
 
 @media (min-width: 1000px) {
+  .meIntro p {
+    margin-left: 350px;
+  }
   .pic {
     width: 350px;
     top: -50px;
@@ -204,8 +209,10 @@ nav li {
 
 @media (min-width: 1300px) {
   .meIntro {
-    /****** arrrgh its not working*/
-    width: 60%;
+    font-size: 22px;
+  }
+  .meIntro p {
+    margin-left: 475px;
   }
   .pic {
     width: 450px;
@@ -216,6 +223,12 @@ nav li {
   }
   .hero h1 {
     font-size: 72px;
+  }
+  .hero pre {
+    font-size: 26px;
+  }
+  .hero p {
+    font-size: 23px;
   }
   .hero .container {
     padding-left: 400px;
